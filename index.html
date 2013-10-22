@@ -20,9 +20,7 @@
       padding: 0;
     }
 
-    a,
-    a:link,
-    a:visited {
+    a {
       border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 
       color: #fff;
@@ -94,8 +92,74 @@
       font-size: 1.125em;
     }
 
-    .intro {
+    .intro,
+    .social {
       margin: 0 0 2.8em;
+    }
+
+    .ir {
+      overflow: hidden;
+
+      text-indent: 100%;
+      white-space: nowrap;
+    }
+
+    .list-group {
+      padding: 0;
+
+      list-style-type: none;
+    }
+
+    .list-group-item {
+      display: block;
+    }
+
+    .list-group-item-inline {
+      display: inline-block;
+    }
+
+    .icon {
+      display: inline-block;
+
+      background: transparent none no-repeat center center;
+      background-size: contain;
+
+      vertical-align: middle;
+    }
+
+    .i-16 {
+      height: 16px;
+      width: 16px;
+    }
+
+    .i-32 {
+      height: 32px;
+      width: 32px;
+    }
+
+    .icon-link {
+      display: block;
+
+      border: 0;
+
+      color: #66f;
+      text-decoration: none;
+    }
+
+    .i-twitter {
+      background-image: url("img/i-twitter.svg");
+    }
+
+    .i-youtube {
+      background-image: url("img/i-youtube.svg");
+    }
+
+    .i-canvas {
+      background-image: url("img/i-canvas.svg");
+    }
+
+    .i-github {
+      background-image: url("img/i-github.svg");
     }
   </style>
 </head>
@@ -103,10 +167,16 @@
 
   <div class="main">
     <div class="main-content">
-      <img src="ac-graphic-design-logo-small.svg" class="logo" alt="">
+      <img src="img/ac-graphic-design-logo-small.svg" class="logo" alt="">
       <div class="text">
         <h1 class="title"><strong><span class="college">Algonquin College</span> Graphic Design Program</strong></h1>
         <p class="intro">We believe graphic design is the exploration of ideas and failures to communicate the solution to a problem both visually and interactively.</p>
+        <ul class="list-group social">
+          <li class="list-group-item list-group-item-inline"><a class="icon-link icon i-32 i-twitter ir" href="https://twitter.com/algonquindesign" rel="external">Twitter</a></li>
+          <li class="list-group-item list-group-item-inline"><a class="icon-link icon i-32 i-youtube ir" href="https://youtube.com/algonquindesign" rel="external">YouTube</a></li>
+          <li class="list-group-item list-group-item-inline"><a class="icon-link icon i-32 i-canvas ir" href="https://algonquin.instructure.com/" rel="external">Canvas</a></li>
+          <li class="list-group-item list-group-item-inline"><a class="icon-link icon i-32 i-github ir" href="https://github.com/algonquindesign" rel="external">GitHub</a></li>
+        </ul>
         <a href="http://www3.algonquincollege.com/mediaanddesign/program/graphic-design/" rel="external">Official Program Details ➡</a>
       </div>
     </div>
