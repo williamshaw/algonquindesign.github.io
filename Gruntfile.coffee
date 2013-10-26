@@ -43,11 +43,11 @@ module.exports = (grunt) ->
       options:
         livereload: true
       styles:
-        files: ['public/*.css']
+        files: ['css/*.css']
       stylus:
         options:
           livereload: false
-        files: ['public/css-src/*.styl']
+        files: ['css/*.styl']
         tasks: ['stylus']
 
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks)
