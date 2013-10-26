@@ -1,5 +1,13 @@
 @import 'nib'
 
+font-family = "sans-serif"
+
+link-border()
+  border-bottom 1px solid rgba(#fff, 0.5)
+
+link-border-hover()
+  border-color #fff
+
 html
   margin 0
   padding 0
@@ -7,7 +15,7 @@ html
   background-color #efefef
 
   color #fff
-  font normal 100%/1.4 sans-serif
+  font normal 100%/1.4 unquote(font-family)
 
 body
   margin 0
@@ -19,17 +27,25 @@ body
   text-indent 100%
   white-space nowrap
 
+.flex-img
+  display block
+  width 100%
+
+.MR-1em
+  margin-right 1em
+
 a
-  border-bottom 1px solid rgba(#fff, 0.5)
+a:link
+a:visited
+  link-border()
 
   color #fff
-  font-weight bold
   text-decoration none
 
 a:hover
 a:focus
 a:active
-  border-bottom-color #fff
+  link-border-hover()
 
 .btn
   display inline-block
@@ -38,7 +54,7 @@ a:active
   border 2px solid rgba(#fff, 0.5)
   border-radius 0.5em
 
-.btn-arrow
+.btn__arrow
   display inline-block
   margin 0 0 0 0.4em
   vertical-align text-top
@@ -90,15 +106,19 @@ a:active
   bottom -2em
   top auto
 
-.logo
+.logo-link
+.logo-link:link
+.logo-link:hover
   display block
   width 18em
+
+  border 0
 
 .college
   display block
   font-weight normal
 
-.text
+.wrapper
   padding-left 8.5em
 
 .title
@@ -149,28 +169,122 @@ a:active
   height 32px
   width 32px
 
+.icon__label
+  display inline
+  vertical-align middle
+
 .icon-link
+.icon-link:link
+.icon-link:visited
   display block
 
   border 0
-  opacity 0.9
 
-  color #66f
-  text-decoration none
+  .icon__label
+    link-border()
 
 .icon-link:hover
 .icon-link:focus
 .icon-link:active
   opacity 1
 
+  .icon__label
+    link-border-hover()
+
+.i--location
+  background-image embedurl("../img/icons/i-location.svg")
+
+.i--calendar
+  background-image embedurl("../img/icons/i-calendar.svg")
+
 .i--twitter
-  background-image embedurl("../img/i-twitter.svg")
+  background-image embedurl("../img/icons/i-twitter.svg")
+
+.i--twitter-bright
+  background-image embedurl("../img/icons/i-twitter-bright.svg")
+
+.i--facebook-bright
+  background-image embedurl("../img/icons/i-facebook-bright.svg")
 
 .i--youtube
-  background-image embedurl("../img/i-youtube.svg")
+  background-image embedurl("../img/icons/i-youtube.svg")
 
 .i--canvas
-  background-image embedurl("../img/i-canvas.svg")
+  background-image embedurl("../img/icons/i-canvas.svg")
 
 .i--github
-  background-image embedurl("../img/i-github.svg")
+  background-image embedurl("../img/icons/i-github.svg")
+
+.gradshow-list
+  display block
+
+.gradshow
+  margin-bottom 2.8em
+
+pad = 0.6em
+imgsize = 6.25em
+
+.gradshow__link
+.gradshow__link:link
+.gradshow__link:visited
+  display block
+  min-height imgsize - pad
+  overflow hidden
+  padding-bottom pad
+  padding-top pad
+  position relative
+
+  border 0
+  border-radius 0.5em
+
+.gradshow__img
+  left pad
+  position absolute
+  top pad
+  width imgsize - pad
+
+.gradshow__year
+.gradshow__arrow
+  font normal 1.125rem/1.4 unquote(font-family)
+
+.gradshow__arrow
+  margin-top -1rem
+  position absolute
+  right pad
+  top 50%
+
+  transform scaleX(0.75)
+
+  font-size 2rem
+
+.gradshow__title
+  margin -0.5em 0 0
+  position absolute
+  top 50%
+
+  font-size 3.75rem
+  font-weight normal
+  line-height 1
+
+.gradshow__details
+  margin-top 0.8em
+
+.gradshow__date
+  display block
+  margin-bottom 0.4em
+
+.loc
+.loc:link
+.loc:visited
+  display inline-block
+  margin-bottom 0.4em
+
+.loc__name
+  display inline-block
+
+.loc__adr
+  display inline-block
+  margin 0
+
+.loc__mailing
+  display none
