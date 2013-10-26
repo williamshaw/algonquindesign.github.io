@@ -1,0 +1,3 @@
+markdown: redcarpet
+baseurl: ""
+exclude: ['CNAME', 'Gruntfile.coffee', 'npmupdatedev', 'package.json', 'README.md']
