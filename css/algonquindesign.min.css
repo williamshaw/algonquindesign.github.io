@@ -5,7 +5,7 @@ body{margin:0;padding:0}
 .MR-1em{margin-right:1em}
 a,a:link,a:visited{border-bottom:1px solid rgba(255,255,255,0.5);color:#fff;text-decoration:none}
 a:hover,a:focus,a:active{border-color:#fff}
-.btn{display:inline-block;padding:.7em .9em .65em;border:2px solid rgba(255,255,255,0.5);-webkit-border-radius:.5em;border-radius:.5em}
+.btn,.btn:link,.btn:visited{display:inline-block;padding:.7em .9em .65em;border:2px solid rgba(255,255,255,0.5);-webkit-border-radius:.5em;border-radius:.5em}
 .btn__arrow{display:inline-block;margin:0 0 0 .4em;vertical-align:text-top;color:rgba(255,255,255,0.7);font-size:1.125rem;line-height:1}
 .btn:hover,.btn:focus,.btn:active{border-color:#fff;}
 .btn:hover .btn__arrow,.btn:focus .btn__arrow,.btn:active .btn__arrow{color:#fff}
