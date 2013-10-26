@@ -130,16 +130,7 @@ a:active
   font-size 1.125em
 
 .intro
-.social
   margin 0 0 2.8em
-
-.social
-  position absolute
-  right 25.7em
-  top 16.4em
-  width 70px
-
-  text-align right
 
 .list-group
   padding 0
@@ -188,7 +179,6 @@ a:active
 .icon-link:hover
 .icon-link:focus
 .icon-link:active
-  opacity 1
 
   .icon__label
     link-border-hover()
@@ -216,6 +206,27 @@ a:active
 
 .i--github
   background-image embedurl("../img/icons/i-github.svg")
+
+.social
+  margin 0 0 2.8em
+
+.social
+  position absolute
+  right 25.7em
+  top 16.4em
+  width 70px
+
+  text-align right
+
+.social__icon
+.social__icon:link
+.social__icon:visited
+  opacity 0.85
+
+.social__icon:hover
+.social__icon:focus
+.social__icon:active
+  opacity 1
 
 .gradshow-list
   display block
