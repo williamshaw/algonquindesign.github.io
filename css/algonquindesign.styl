@@ -52,7 +52,7 @@ a:active
 .btn:active
   border-color #fff
 
-  .btn-arrow
+  .btn__arrow
     color #fff
 
 .main
@@ -61,14 +61,14 @@ a:active
   padding 3.5em 0
   width 34em
 
-.main-content
+.main__content
   padding 2.7em 2em
   position relative
 
   background-color #00673e
 
-.main-content:before
-.main-content:after
+.main__content:before
+.main__content:after
   display block
   height 4em
   left -10%
@@ -81,7 +81,7 @@ a:active
 
   content ""
 
-.main-content:after
+.main__content:after
   bottom -2em
   top auto
 
@@ -91,6 +91,7 @@ a:active
 
 .college
   display block
+  font-weight normal
 
 .text
   padding-left 8.5em
@@ -118,13 +119,13 @@ a:active
 
   list-style-type none
 
-.list-group-item
+.list-group__item
   display block
 
-.list-group-item-inline
+.list-group__item--inline
   display inline-block
 
-.btn-list-item
+.btn-list__item
   margin-bottom 0.8em
 
 .icon
@@ -135,11 +136,11 @@ a:active
 
   vertical-align middle
 
-.i-16
+.i--16
   height 16px
   width 16px
 
-.i-32
+.i--32
   height 32px
   width 32px
 
@@ -157,15 +158,14 @@ a:active
 .icon-link:active
   opacity 1
 
-.i-twitter
+.i--twitter
   background-image embedurl("../img/i-twitter.svg")
 
-.i-youtube
+.i--youtube
   background-image embedurl("../img/i-youtube.svg")
 
-.i-canvas
+.i--canvas
   background-image embedurl("../img/i-canvas.svg")
 
-.i-github
+.i--github
   background-image embedurl("../img/i-github.svg")
-
