@@ -1,9 +1,14 @@
 html{margin:0;padding:0;background-color:#efefef;color:#fff;font:normal 100%/1.4 sans-serif}
 body{margin:0;padding:0}
+.ir{overflow:hidden;text-indent:100%;white-space:nowrap}
 a{border-bottom:1px solid rgba(255,255,255,0.5);color:#fff;font-weight:bold;text-decoration:none}
 a:hover,a:focus,a:active{border-bottom-color:#fff}
+.btn{display:inline-block;padding:.7em .9em .65em;border:2px solid rgba(255,255,255,0.5);-webkit-border-radius:.5em;border-radius:.5em}
+.btn-arrow{display:inline-block;margin:0 0 0 .4em;vertical-align:text-top;color:rgba(255,255,255,0.7);font-size:1.125rem;line-height:1}
+.btn:hover,.btn:focus,.btn:active{border-color:#fff;}
+.btn:hover .btn-arrow,.btn:focus .btn-arrow,.btn:active .btn-arrow{color:#fff}
 .main{margin:3em auto;overflow:hidden;padding:3.5em 0;width:34em}
-.main-content{padding:2.5em 2em;position:relative;background-color:#00673e}
+.main-content{padding:2.7em 2em;position:relative;background-color:#00673e}
 .main-content:before,.main-content:after{display:block;height:4em;left:-10%;position:absolute;top:-2em;width:120%;background-color:#00673e;-webkit-transform:rotate(5deg);-moz-transform:rotate(5deg);-o-transform:rotate(5deg);-ms-transform:rotate(5deg);transform:rotate(5deg);content:""}
 .main-content:after{bottom:-2em;top:auto}
 .logo{display:block;width:18em}
@@ -11,10 +16,11 @@ a:hover,a:focus,a:active{border-bottom-color:#fff}
 .text{padding-left:8.5em}
 .title{margin:2.4em 0 2.4em;width:15em;font-size:1.125em}
 .intro,.social{margin:0 0 2.8em}
-.ir{overflow:hidden;text-indent:100%;white-space:nowrap}
+.social{position:absolute;right:25.7em;top:16.4em;width:70px;text-align:right}
 .list-group{padding:0;list-style-type:none}
 .list-group-item{display:block}
 .list-group-item-inline{display:inline-block}
+.btn-list-item{margin-bottom:.8em}
 .icon{display:inline-block;background:transparent none no-repeat center center;-webkit-background-size:contain;-moz-background-size:contain;background-size:contain;vertical-align:middle}
 .i-16{height:16px;width:16px}
 .i-32{height:32px;width:32px}

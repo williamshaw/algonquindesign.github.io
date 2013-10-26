@@ -13,8 +13,14 @@ body
   margin 0
   padding 0
 
+.ir
+  overflow hidden
+
+  text-indent 100%
+  white-space nowrap
+
 a
-  border-bottom 1px solid rgba(255, 255, 255, 0.5)
+  border-bottom 1px solid rgba(#fff, 0.5)
 
   color #fff
   font-weight bold
@@ -25,6 +31,30 @@ a:focus
 a:active
   border-bottom-color #fff
 
+.btn
+  display inline-block
+  padding 0.7em 0.9em 0.65em
+
+  border 2px solid rgba(#fff, 0.5)
+  border-radius 0.5em
+
+.btn-arrow
+  display inline-block
+  margin 0 0 0 0.4em
+  vertical-align text-top
+
+  color rgba(#fff, 0.7)
+  font-size 1.125rem
+  line-height 1
+
+.btn:hover
+.btn:focus
+.btn:active
+  border-color #fff
+
+  .btn-arrow
+    color #fff
+
 .main
   margin 3em auto
   overflow hidden
@@ -32,7 +62,7 @@ a:active
   width 34em
 
 .main-content
-  padding 2.5em 2em
+  padding 2.7em 2em
   position relative
 
   background-color #00673e
@@ -75,11 +105,13 @@ a:active
 .social
   margin 0 0 2.8em
 
-.ir
-  overflow hidden
+.social
+  position absolute
+  right 25.7em
+  top 16.4em
+  width 70px
 
-  text-indent 100%
-  white-space nowrap
+  text-align right
 
 .list-group
   padding 0
@@ -91,6 +123,9 @@ a:active
 
 .list-group-item-inline
   display inline-block
+
+.btn-list-item
+  margin-bottom 0.8em
 
 .icon
   display inline-block
