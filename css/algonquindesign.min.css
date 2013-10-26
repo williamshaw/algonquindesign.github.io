@@ -10,6 +10,7 @@ a:hover,a:focus,a:active{border-bottom-color:#fff}
 .main{margin:3em auto;overflow:hidden;padding:3.5em 0;width:34em}
 .main__content{padding:2.7em 2em;position:relative;background-color:#00673e}
 .main__content:before,.main__content:after{display:block;height:4em;left:-10%;position:absolute;top:-2em;width:120%;background-color:#00673e;-webkit-transform:rotate(5deg);-moz-transform:rotate(5deg);-o-transform:rotate(5deg);-ms-transform:rotate(5deg);transform:rotate(5deg);content:""}
+.main__content--alt,.main__content--alt:before,.main__content--alt:after{background-color:#999}
 .main__content:after{bottom:-2em;top:auto}
 .logo{display:block;width:18em}
 .college{display:block;font-weight:normal}
