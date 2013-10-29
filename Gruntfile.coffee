@@ -1,7 +1,5 @@
 module.exports = (grunt) ->
 
-  devPort = 8080
-
   grunt.initConfig
 
     svgmin:
@@ -39,16 +37,33 @@ module.exports = (grunt) ->
             'css/*.styl'
           ]
 
+    parallel:
+      dev:
+        options:
+          stream: true
+        tasks: [
+          {
+            grunt: true
+            args: ['watch']
+          }
+          {
+            cmd: 'jekyll'
+            args: ['serve', '--watch', '--baseurl', '']
+          }
+        ]
+
     watch:
       options:
         livereload: true
-      styles:
-        files: ['css/*.css']
       stylus:
         options:
           livereload: false
         files: ['css/*.styl']
         tasks: ['stylus']
+      css:
+        files: ['_site/css/*.css']
+      html:
+        files: ['_site/*.html']
 
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks)
 
@@ -59,5 +74,5 @@ module.exports = (grunt) ->
   ]
 
   grunt.registerTask 'default', [
-    'watch'
+    'parallel:dev'
   ]
