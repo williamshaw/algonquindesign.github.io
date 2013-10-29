@@ -6,5 +6,6 @@ exclude:
   - 'package.json'
   - 'README.md'
   - 'node_modules'
+  - 'aws-s3.policy'
   - '*.styl'
   - '*.coffee'
