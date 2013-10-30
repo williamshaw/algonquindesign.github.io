@@ -43,6 +43,8 @@ $ grunt
 
 The development site will now be visible at [http://localhost:4000](http://localhost:4000).
 
+Grunt watch is included and will set up a LiveReload server so you can use the browser extensions.
+
 ---
 
 ## Branching Strategy
