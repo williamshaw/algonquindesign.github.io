@@ -1,0 +1,147 @@
+.courses-wrapper
+  padding-bottom 6em
+  width 100%
+
+  overflow scroll
+  -webkit-overflow-scrolling: touch;
+
+  @media mw85
+    overflow visible
+
+.courses
+  margin 0 0 0 5px
+  padding 0
+  width 500%
+
+  border-collapse collapse
+
+  @media mw19
+    width 390%
+
+  @media mw25
+    width 340%
+
+  @media mw32
+    width 270%
+
+  @media mw38
+    width 250%
+
+  @media mw44
+    width 170%
+
+  @media mw60
+    width 140%
+
+  @media mw85
+    width 100%
+
+  td
+  th
+    width 16.5%
+
+.courses__term
+  display block
+
+.courses__season
+  display block
+
+.courses__single
+  margin 0
+  overflow hidden
+  padding 0
+
+  background-color #666
+
+.course
+  margin 0
+  min-height 7.6em
+  padding 10px 20px 10px 10px
+  position relative
+
+  background-color #fff
+  border 0
+  box-shadow 0 2px 4px rgba(0,0,0,0.5)
+
+  > button
+    display block
+    padding 0.2em 0.5em 0.3em
+    width 100%
+
+    background-color #ccc
+    border 0
+
+    font normal 100%/1.4 Merriweather,Georgia,serif
+    text-align left
+
+.course__name
+  display block
+
+.course__number
+  display block
+
+.course__reqs
+  display block
+
+.course__info
+  display none
+  padding 10px 20px 10px 10px
+  position relative
+
+.course__info[data-state="visible"]
+  display block
+
+.course__info:before
+  content ""
+  height 0
+  position absolute
+  top -17px
+  width 0
+
+  border-style solid
+  border-width 0 10px 17px 10px
+  border-color transparent transparent #666 transparent
+
+.prereq
+  background #fff none no-repeat right top
+
+.prereq-r
+  background-image embedurl("../img/prereq_r.svg")
+
+.prereq-l
+  background-image embedurl("../img/prereq_r.svg")
+  background-position left top
+
+.prereq-lr-c
+  background-image embedurl("../img/prereq_r.svg")
+  background-repeat repeat-x
+
+.prereq-ud-r
+  background-image embedurl("../img/prereq_ud_r.svg")
+
+.prereq-ud-l
+  background-image embedurl("../img/prereq_ud_l.svg")
+
+.prereq-ud-lr
+  background-image embedurl("../img/prereq_ud_lr.svg")
+
+.prereq-ud-r-c
+  background-image embedurl("../img/prereq_ud_r_c.svg")
+
+.prereq-d-r
+  background-image embedurl("../img/prereq_d_r.svg")
+
+.prereq-d-l
+  background-image embedurl("../img/prereq_d_l.svg")
+
+.prereq-d-lr
+  background-image embedurl("../img/prereq_d_lr.svg")
+
+.prereq-u-lr
+  background-image embedurl("../img/prereq_u_lr.svg")
+
+.prereq-u-r-c
+  background-image embedurl("../img/prereq_u_r_c.svg")
+
+.prereq-ud-c
+  background-image embedurl("../img/prereq_ud_c.svg")

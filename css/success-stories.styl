@@ -1,0 +1,117 @@
+.success-stories
+  overflow hidden
+  margin-top -5em
+  padding 3em 0 0
+  position relative
+
+  @media mw38
+    margin-top -7em
+    padding-top 5em
+
+  @media mw85
+    margin-top -9em
+
+.success-stories__wrapper
+  max-height 24em
+
+  @media mw38
+    max-height 22em
+
+.success-stories__img
+  display block
+  margin -3em auto 0
+  position relative
+  width 100%
+  z-index 80
+
+  @media mw19
+    width 90%
+
+  @media mw32
+    margin-left 0
+    width 75%
+
+  @media mw38
+    margin-top -5em
+    width 60%
+
+  @media mw60
+    margin-left 10%
+    width 45%
+
+.success-stories__slant
+  height 100%
+  left -2%
+  position absolute
+  width 115%
+
+  background transparent url("http://placehold.it/640x640/cccccc&text=%20") no-repeat center center
+  background-size cover
+  transform rotate(4deg)
+  transform-origin center top
+
+.success-story
+  bottom 8px
+  padding 0 8px
+  position absolute
+  z-index 100
+
+  font-size 0.875rem
+
+  @media mw19
+    bottom 6%
+    padding-left 0
+    padding-right 0
+
+  @media mw38
+    bottom 12%
+
+.success-story__quote
+  margin 0 0 8px
+  padding 0.8em 1em
+  position relative
+
+  background-color #fff
+
+  hyphens auto
+
+.success-story__quote:before
+.success-story__quote-text:after
+  position absolute
+
+  opacity 0.6
+
+  text-align right
+
+.success-story__quote:before
+  content "“"
+  left 0.1em
+  top 0.8em
+  width 0.8em
+
+.success-story__quote-text:after
+  content "”"
+
+.success-story__source
+  padding 0.8em 1em 0.7em
+
+  background-color #fff
+
+  font-size 0.75rem
+  font-style italic
+  text-align right
+
+  @media mw25
+    float right
+
+.success-story__name
+  display block
+
+  @media mw25
+    display inline
+
+.success-story__comma
+  display none
+
+  @media mw25
+    display inline

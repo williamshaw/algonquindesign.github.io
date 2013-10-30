@@ -1,0 +1,172 @@
+html
+  font normal 100%/1.4 Merriweather,Georgia,serif
+
+  @media mw38
+    font-size 110%
+
+  @media mw60
+    font-size 120%
+
+  @media mw85
+    font-size 130%
+
+  @media mw115
+    font-size 140%
+
+body
+  margin 0
+  overflow-x hidden
+  padding 0
+
+a
+a:link
+a:visited
+  border-bottom 0.1em solid rgba(ac-green, 0.3)
+
+  color ac-green
+  text-decoration none
+
+a:hover
+a:focus
+a:active
+  border-color rgba(ac-green, 1)
+
+a:focus
+  outline 2px solid #000
+
+a.no-link-mark
+a.no-link-mark:link
+a.no-link-mark:visited
+  border 0
+
+h1
+  margin 0 0 1rem
+
+  font bold 1.875rem/1.1 "Source Sans Pro",sans-serif
+
+h2
+  margin 0 0 1rem
+
+  font bold 1.5rem/1.2 "Source Sans Pro",sans-serif
+
+h3
+  margin 0 0 1rem
+
+  font bold 1.125rem/1.375 "Source Sans Pro",sans-serif
+
+abbr[title="and"]
+  border-bottom 0
+
+  font-family Baskerville,Palatino,"Book Antiqua",serif
+  font-style italic
+  font-weight normal
+
+.embed
+  height 0
+  overflow hidden
+  position relative
+
+.embed__item
+  bottom 0
+  left 0
+  position absolute
+  right 0
+  top 0
+  width 100%
+
+.ratio-1by1
+  padding-bottom 100%
+
+.ratio-4by3
+  padding-bottom 75%
+
+.ratio-16by9
+  padding-bottom 56.25%
+
+.ratio-16by6
+  padding-bottom 37.5%
+
+.ratio-unknown
+  height auto
+
+  > .embed__item
+    position static
+
+.btn
+.btn:link
+.btn:visited
+  display inline-block
+  margin 0 0 1.4em 0
+  padding 0.6em 2em 0.7em
+  position relative
+
+  background-color #666
+  border-radius 3em
+
+  color #fff
+  font-family "Source Sans Pro",sans-serif
+
+  @media mw32
+    margin-bottom 2em
+
+  @media mw38
+    margin-bottom 2.8em
+
+.btn:hover
+.btn:focus
+.btn:active
+  background-color ac-green
+
+.btn:focus
+  box-shadow 0 0 0 2px #fff, 0 0 0 4px #000
+  outline 0
+
+.no-boxshadow .btn:focus
+  outline 2px solid #000
+
+.btn:active
+  top 1px
+
+.wrapper
+  margin 0 auto
+  max-width 58rem
+
+  @media mw19
+    padding 0 6%
+
+.wrapper__relative
+  position relative
+
+.section
+  margin 0
+  padding 8px
+
+  text-align center
+
+.section__title
+  margin-top 0.75em
+
+  @media mw32
+    font-size 2rem
+
+  @media mw38
+    margin-top 0.9em
+    margin-bottom 1em
+
+  @media mw60
+    font-size 2.5rem
+
+.section__blurb
+  margin-left auto
+  margin-right auto
+  max-width 30em
+
+  font-size 0.875rem
+
+  @media mw32
+    font-size 1rem
+
+.section--curriculum
+  padding-bottom 3em
+
+  background-color #e2e2e2

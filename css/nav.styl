@@ -1,0 +1,216 @@
+.nav-btn
+.nav-btn:link
+.nav-btn:visited
+  bottom 0
+  padding 0 0 0 12px
+  position absolute
+  right 0
+
+  border 0
+  transition padding 50ms linear
+
+  color #fff
+  font-family "Source Sans Pro",Arial,sans-serif
+  font-size 0.875rem
+
+.nav-btn:hover
+.nav-btn:focus
+.nav-btn:active
+  background-color #000
+  background-position 0 -40px
+
+.nav-btn:focus
+  box-shadow inset 0 0 0 2px #fff
+  outline 0
+
+.no-boxshadow .nav-btn:focus
+  outline 2px solid #fff
+
+.nav-btn[data-state="active"]
+  padding-left 0
+
+  background-color #000
+  background-position -46px -40px
+
+.nav-btn__page
+  display inline-block
+  margin 0.1em 0 0
+  max-width 10rem
+  vertical-align middle
+  overflow hidden
+
+  transition max-width 100ms linear
+
+  text-align right
+  white-space nowrap
+
+  @media mw38
+    margin-top 0
+
+.nav-btn[data-state="active"] .nav-btn__page
+  max-width 0
+
+.nav__icon
+  display inline-block
+  height 40px
+  vertical-align middle
+  width 46px
+
+  background transparent embedurl("../img/i-nav.svg") no-repeat 1px -1px
+  transition all 100ms linear
+
+.nav__icon--close
+  right 0
+  opacity 0
+  position absolute
+  top 0
+
+  background-position -46px -1px
+
+.nav-btn[data-state="active"] .nav__icon--open
+  opacity 0
+  transform rotate(45deg)
+
+.nav-btn[data-state="active"] .nav__icon--close
+  opacity 1
+
+.nav
+  clear both
+  overflow hidden
+
+  font-family "Source Sans Pro",Arial,sans-serif
+
+.nav > ul
+  margin 0
+  padding 8px 0
+
+  background-color #000
+
+  list-style-type none
+  font-size 1.125em
+  font-weight bold
+
+.nav mark
+  background-color transparent
+
+  color inherit
+
+.nav span
+  display block
+
+  color #bbb
+  font normal 0.875em/1.5 Merriweather,serif
+
+.nav a
+.nav a:link
+.nav a:visited
+  display block
+  padding 0.5em 46px 0.5em 10px
+  position relative
+
+  border 0
+
+  color #e2e2e2
+  text-decoration none
+
+.nav a:hover
+.nav a:focus
+.nav a:active
+  background-color #222
+
+  color #fff
+
+.nav a:hover span
+.nav a:focus span
+.nav a:active span
+  color #ddd
+
+.nav a:focus
+  box-shadow inset 0 0 0 2px #fff
+  outline 0
+
+.no-boxshadow .nav a:focus
+  outline 2px solid #fff
+
+.nav__current
+  position relative
+
+.nav__current a:after
+  content "–"
+  height 1.4em
+  margin-top -0.8em
+  position absolute
+  right 0
+  top 50%
+  width 46px
+
+  opacity 0.8
+
+  font-size 1.5em
+  text-align center
+
+@media mw32
+
+  .nav--bottom .nav__current a:after
+    left 1%
+    right auto
+    width 1em
+
+@media mw44
+
+  .nav--bottom .nav__current a:after
+    left -0.8em
+
+.nav--top > ul
+  left 0
+  max-height 0
+  margin 0
+  overflow hidden
+  padding 0
+  position absolute
+  right 0
+  z-index 1000
+
+  transition max-height 200ms linear
+
+  text-align right
+
+  @media mw19
+    left auto
+    width 11.4em
+
+.nav--top li:first-child
+  margin-top 8px
+
+.nav--top li:last-child
+  margin-bottom 8px
+
+.nav--top[data-state="expanded"] > ul
+  max-height 24em
+
+.nav--bottom
+  font-size 0.875rem
+
+  @media mw19
+    margin-left -7%
+    margin-right -7%
+
+  @media mw44
+    float left
+    margin-left -10px
+    overflow visible
+    width 60%
+
+@media mw19
+
+  .nav--bottom a
+  .nav--bottom a:link
+  .nav--bottom a:visited
+    padding-left 6%
+
+@media mw44
+
+  .nav--bottom a
+  .nav--bottom a:link
+  .nav--bottom a:visited
+    padding-left 10px

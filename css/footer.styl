@@ -1,0 +1,210 @@
+.pre-footer
+  padding-top 1.4em
+  position relative
+
+  background-color #fff
+
+.pre-footer:before
+  display block
+  content " "
+  height 8em
+  left -5%
+  position absolute
+  top -5%
+  width 115%
+  z-index 1
+
+  background-color #fff
+  transform rotate(4deg)
+
+  @media mw44
+    top -8%
+
+  @media mw60
+    top -11%
+
+.pre-footer__item
+  margin-bottom 1.4em
+  position relative
+  z-index 10
+
+.footer
+  position relative
+
+  background-color #000
+
+.footer__wrapper
+  position relative
+
+.social
+  text-align center
+
+  @media mw44
+    bottom 6em
+    padding-left 0
+    padding-right 0
+    padding-top 0.8em
+    position absolute
+    right 0
+
+.social__wrapper
+  padding 8px 0
+
+  border-top 1px solid #333
+
+  @media mw44
+    border 0
+
+.social__icon-list
+  height 36px
+  margin 0
+  padding 0
+
+  list-style-type none
+
+  @media mw38
+    float left
+
+  > li
+    display inline-block
+
+.social__link
+.social__link:link
+.social__link:visited
+  display block
+  height 36px
+  margin 0 4px
+
+  border 0
+  opacity 0.8
+
+  color #fff
+
+.social__link:hover
+.social__link:focus
+.social__link:active
+  opacity 1
+
+.social__icon
+  display inline-block
+  height 36px
+  width 36px
+
+  background-color transparent none no-repeat center center
+  background-size contain
+
+.i-twitter
+  background-image embedurl("../img/i-twitter.svg")
+
+.i-github
+  background-image embedurl("../img/i-github.svg")
+
+.i-canvas
+  background-image embedurl("../img/i-canvas.svg")
+
+.i-youtube
+  background-image embedurl("../img/i-youtube.svg")
+
+.social a:focus
+.contentinfo a:focus
+  outline-color #fff
+
+.contentinfo
+  padding 0 0 8px
+
+  color #e2e2e2
+  font-size 0.75rem
+  text-align center
+
+  @media mw44
+    padding-left 0
+    padding-right 0
+
+.contentinfo__wrapper
+  padding 8px 0 0 0
+
+  border-top 1px solid #333
+
+  @media mw38
+    padding-top 0
+
+    border 0
+
+.contentinfo a
+.contentinfo a:link
+.contentinfo a:visited
+  border-color rgba(#e2e2e2, 0.4)
+
+  color #e2e2e2
+
+.contentinfo a:hover
+.contentinfo a:focus
+.contentinfo a:active
+  border-color #fff
+
+  color #fff
+
+.algonquin-logo
+  display inline-block
+
+  opacity 0.8
+
+  > img
+    display block
+
+.algonquin-logo:hover
+.algonquin-logo:focus
+.algonquin-logo:active
+  opacity 1
+
+.copyright
+  margin 0
+  padding 0
+
+.terms-links
+  margin 0
+  padding 0
+
+  > li
+    display inline-block
+
+  > li:after
+    content "·"
+    display inline-block
+    margin-left 0.3em
+    margin-right 0.1em
+
+    color #666
+
+  > li:last-child:after
+    content ""
+    display none
+
+@media mw38
+
+  .contentinfo__logo
+    float right
+    position relative
+    top -0.4em
+
+  .contentinfo__copyright
+    clear both
+    overflow hidden
+    padding-bottom 8px
+    padding-top 16px
+
+    border-top 1px solid #333
+
+  .copyright
+    float left
+
+  .terms-links
+    float right
+
+@media mw44
+
+  .contentinfo__logo
+    bottom 4.5em
+    position absolute
+    right 0
+    top auto

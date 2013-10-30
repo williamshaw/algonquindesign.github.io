@@ -29,12 +29,15 @@ module.exports = (grunt) ->
         options:
           paths: ['css']
           use: ['nib']
-          import: ['nib']
+          import: ['nib', 'common']
           compress: true
           urlfunc: 'embedurl'
         files:
           'css/algonquindesign.min.css': [
+            'css/normalize.styl'
+            'css/general.styl'
             'css/*.styl'
+            '!css/common.styl'
           ]
 
     coffee:
