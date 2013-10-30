@@ -1,0 +1,62 @@
+## TEAM
+
+Designer: Jed Looker <lookerj@algonquincollege.com>
+Site: http://jedlooker.com
+Twitter: @jedlooker
+LinkedIn: http://www.linkedin.com/in/jedlooker
+Location: Ottawa, Canada
+
+Developer: Thomas J Bradley <hey@thomasjbradley.ca>
+Site: http://thomasjbradley.ca
+Twitter: @thomasjbradley
+GitHub: https://github.com/thomasjbradley
+Location: Ottawa, Canada
+
+Planner: Alain Paradis <paradia@algonquincollege.com>
+Twitter: @alainparadis
+Location: Ottawa, Canada
+
+Content Wrangler: Andrea Emery <emerya@algonquincollege.com>
+Twitter: @TypeMistress
+Location: Ottawa, Canada
+
+
+## THANKS
+
+The rest of the great faculty members:
+
+- David Bromley
+- Janet Menger
+- Chris Jones
+
+Check out the faculty page for a list:
+http://algonquindesign.ca/faculty/
+
+
+## SITE
+
+How we made it:
+Check out our page on the process we went through to make the site:
+http://algonquindesign.com/colophon/
+
+Source code:
+All our source code is up on GitHub, check it out:
+http://github.com/algonquindesign/algonquindesign.github.io/
+
+Software:
+- Sublime Text 3 (with Vintageous)
+- Git
+- Grunt.js
+- Stylus
+- CoffeeScript
+- UglifyJS
+
+Check out the package.json for more:
+https://github.com/algonquindesign/algonquindesign.github.io/blob/master/package.json
+
+Domain registration:
+- Hover <https://www.hover.com/>
+
+Hosting:
+- GitHub <http://github.com/>
+- Amazon S3 <http://aws.amazon.com/s3/>
