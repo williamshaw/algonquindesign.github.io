@@ -48,14 +48,22 @@ module.exports = (grunt) ->
           ]
 
     uglify:
-      minifiy:
+      prod:
         options:
           mangle: true
           compress: true
           preserveComments: 'some'
         files:
           'js/algonquindesign.min.js': [
-            'js/js-src/$.min.js'
+            'js/$.min.js'
+            'js/algonquindesign.coffee.js'
+          ]
+
+    concat:
+      dev:
+        files:
+          'js/algonquindesign.min.js': [
+            'js/$.min.js'
             'js/algonquindesign.coffee.js'
           ]
 
@@ -83,10 +91,14 @@ module.exports = (grunt) ->
         files: ['css/*.styl']
         tasks: ['stylus']
       coffee:
+        options:
+          livereload: false
         files: ['js/*.coffee']
-        tasks: ['coffee']
+        tasks: ['coffee', 'concat:dev']
       css:
         files: ['_site/css/*.css']
+      js:
+        files: ['_site/js/*.js']
       html:
         files: ['_site/*.html']
 
@@ -97,7 +109,7 @@ module.exports = (grunt) ->
     'imageoptim'
     'stylus'
     'coffee'
-    'uglify'
+    'uglify:prod'
   ]
 
   grunt.registerTask 'default', [
