@@ -53,7 +53,7 @@ Development work should be completed on the `dev` branch or in feature branches 
 
 *The `dev` branch has a `CNAME` matching `staging.algonquindesign.ca`—whereas the `master` branch matches `algonquindesign.ca`.*
 
-**Staging**
+### Staging
 
 Push to the staging repo on GitHub:
 
@@ -61,9 +61,9 @@ Push to the staging repo on GitHub:
 $ git push staging dev:gh-pages
 ```
 
-**Production**
+### Production
 
-Merge `dev` with `master` and push to GitHub.
+Merge `dev` with `master` and launch.
 
 ```sh
 $ git checkout master
