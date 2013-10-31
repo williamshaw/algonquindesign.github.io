@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+# Launch the website and perform specific tasks
+
+git push
+# grunt s3
+# cloudflare clear cache
+# ping search engines
