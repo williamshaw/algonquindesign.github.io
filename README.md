@@ -68,7 +68,7 @@ Merge `dev` with `master` and push to GitHub.
 ```sh
 $ git checkout master
 $ git merge dev
-$ git push
+$ ./launch
 ```
 
 ---
