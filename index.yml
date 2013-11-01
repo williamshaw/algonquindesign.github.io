@@ -1,0 +1,51 @@
+---
+layout: index
+permalink: index.html
+title-after: "—Ottawa, Canada"
+nav-title: Program
+metadesc: >
+
+heading: Graphic Design
+intro: >
+  Donec hendrerit commodo tortor aviverra nunc bibendum dolor eget in risus in massa bibendum.
+
+faculty:
+  heading: Our Faculty
+  intro: >
+    Mauris consequat tincidunt libero nec ornare nam fermentum, orci vitae placerat volutpat, magna urna semper nisl nec hendrerit velit diam eget ipsum.
+  btn: Meet our faculty
+
+curriculum:
+  heading: Our Curriculum
+  intro: >
+    Fusce iaculis gravida porttitor mauris in sem congue ipsum gravida interdum vel iaculis sapien.
+  btn: Explore our curriculum
+  streams:
+    - class: icon-stream1
+      title: Vestibulum Interdum
+    - class: icon-stream2
+      title: Vestibulum Interdum
+    - class: icon-stream3
+      title: Vestibulum Interdum
+    - class: icon-stream4
+      title: Vestibulum Interdum
+    - class: icon-stream5
+      title: Vestibulum Interdum
+    - class: icon-stream6
+      title: Vestibulum Interdum
+    - class: icon-stream7
+      title: Vestibulum Interdum
+    - class: icon-stream8
+      title: Vestibulum Interdum
+    - class: icon-stream9
+      title: Vestibulum Interdum
+
+success-story:
+  name: Person Name
+  gradYear:
+  photo:
+  job: >
+    Title, Company Name
+  quote: >
+    Tweet-size 140 chars. Vestibulum quis magna a sapien consequat molestie in sed sem. Nunc dignissim nisi ligula, ut gravida sem. Nullam elit.
+---

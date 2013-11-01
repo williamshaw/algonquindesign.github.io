@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{page.title}} · {% endif %}Graphic Design at Algonquin College{% if page.title-after %}{{page.title-after}}{% endif %}</title>
+  <meta name="description" content="{{page.metadesc}}">
+  <meta name="handheldfriendly" content="true">
+  <meta name="mobileoptimized" content="240">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="{{site.baseurl}}/css/algonquindesign.min.css" rel="stylesheet">
+  <script src="{{site.baseurl}}/js/modernizr.min.js"></script>
+</head>
+<body>
+
+<header class="masthead clearfix" role="banner">
+  <div class="wrapper">
+    <div class="wrapper__relative">
+      {% if page.url == '/' %}
+        <strong class="logo">
+          {% include logo-link.html %}
+        </strong>
+      {% else %}
+        <h1 class="logo">
+          {% include logo-link.html %}
+        </h1>
+      {% endif %}
+      <a class="nav-btn" href="#nav"><span class="nav-btn__page">{{page.nav-title}}</span><i class="nav__icon nav__icon--open"></i><i class="nav__icon nav__icon--close"></i></a>
+      <nav class="nav nav--top" data-state="collapsed" role="navigation">
+        {% include nav-list.html showdesc=false %}
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main role="main">
+  {{content}}
+</main>
+
+<div class="section pre-footer">
+  <div class="wrapper">
+    <aside class="pre-footer__item start-applying">
+      <h2>I’m Interested</h2>
+      <p>In hac habitasse platea sera dictumusta.</p>
+      <a class="btn" href="/start-applying/">Tell me more</a>
+    </aside>
+    <aside class="pre-footer__item have-question">
+      <h2>Please Clarify</h2>
+      <p>Phasellus placerat lorem condimentum.</p>
+      <a class="btn" href="/grads/">Ask a question</a>
+    </aside>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="wrapper">
+    <div class="wrapper__relative">
+
+      <nav class="nav nav--bottom" id="nav">
+        {% include nav-list.html showdesc=true %}
+      </nav>
+
+      <aside class="social">
+        <div class="social__wrapper">
+          <ul class="social__icon-list">
+            {% include social-link.html class="i-twitter" title="Twitter" url="https://twitter.com/algonquindesign" %}
+            {% include social-link.html class="i-youtube" title="YouTube" url="https://youtube.com/algonquindesign" %}
+            {% include social-link.html class="i-canvas" title="Canvas" url="https://algonquin.instructure.com" %}
+            {% include social-link.html class="i-github" title="GitHub" url="https://github.com/algonquindesign" %}
+          </ul>
+        </div>
+      </aside>
+
+      <footer class="contentinfo" role="contentinfo">
+        <div class="contentinfo__wrapper">
+          <div class="contentinfo__logo">
+            <a class="algonquin-logo no-link-mark" href="http://algonquincollege.com" rel="external">
+              <img src="{{site.baseurl}}/img/algonquin-college.svg" alt="Algonquin College">
+            </a>
+          </div>
+          <div class="contentinfo__copyright">
+            <p class="copyright">© Graphic Design, Algonquin College</p>
+            <ul class="terms-links">
+              <li><a href="/privacy-terms-cookies/">Privacy, Terms &amp; Cookies</a></li>
+              <li><a href="/colophon/">How It’s Made</a></li>
+            </li>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  var cutsTheMustard = 'querySelector' in document && 'localStorage' in window && 'addEventListener' in window;
+
+  WebFontConfig = {
+    google: {
+      families: ['Source+Sans+Pro:400,600', 'Merriweather:400,700']
+    }
+  }
+
+  Modernizr.load({
+    test: cutsTheMustard,
+    yep:['{{site.basurl}}/js/algonquindesign.min.js'],
+
+    complete: function (url) {
+      ConnectionSpeed.options.speedTestUrl = "{{site.cdn}}/25k.jpg";
+
+      ConnectionSpeed.get(function (bandwidth) {
+        Modernizr.load({
+          test: bandwidth == 'high',
+          yep: ['//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js']
+        });
+      });
+    }
+  });
+</script>
+
+</body>
+</html>

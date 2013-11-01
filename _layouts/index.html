@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<div class="program">
+  <div class="wrapper">
+    <h2 class="program__title">{{page.heading}}</h2>
+    <p class="program__intro">{{page.intro}}</p>
+  </div>
+</div>
+
+<section class="success-stories">
+  <div class="success-stories__slant"></div>
+  <div class="wrapper">
+    <div class="wrapper__relative success-stories__wrapper">
+      <img class="success-stories__img" src="{{site.baseurl}}/img/person.svg" alt="">
+      <figure class="success-story">
+        <blockquote class="success-story__quote">
+          <span class="success-story__quote-text">{{page.success-story.quote}}</span>
+        </blockquote>
+        <figcaption class="success-story__source">
+          <span class="success-story__name">
+            —<strong>{{page.success-story.name}}</strong><span class="success-story__comma">,</span>
+          </span>
+          <span class="success-story__job">{{page.success-story.job}}</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section section--faculty">
+  <div class="wrapper">
+    <h2 class="section__title">{{page.faculty.heading}}</h2>
+    <p class="section__blurb">{{page.faculty.intro}}</p>
+
+    <ul class="faculty-imgs">
+      {% for person in site.categories.faculty-fulltime %}
+        <li class="faculty-imgs__person">
+          <img src="{{site.cdn}}/faculty/{{person.photo}}" alt="">
+        </li>
+      {% endfor %}
+    </ul>
+
+    <a class="btn" href="/faculty/">{{page.faculty.btn}}</a>
+  </div>
+</section>
+
+<section class="section section--curriculum">
+  <div class="wrapper">
+    <h2 class="section__title">{{page.curriculum.heading}}</h2>
+    <p class="section__blurb">{{page.curriculum.intro}}</p>
+
+    <ul class="curriculum-streams">
+      {% for stream in page.curriculum.streams %}
+        <li class="curriculum-streams__item">
+          <i class="curriculum-streams__icon {{stream.class}}"></i>
+          <h3 class="curriculum-streams__title">{{stream.title}}</h3>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <a class="btn" href="/curriculum/">{{page.curriculum.btn}}</a>
+  </div>
+</section>

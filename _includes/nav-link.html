@@ -1,0 +1,10 @@
+<li class="{% if page.url contains include.match %}nav__current{% endif %}">
+  <a href="{% unless include.url contains 'http' %}{{site.baseurl}}{% endunless %}{{include.url}}">
+    {% if page.url contains include.match %}<mark>{% endif %}
+    <b>{{include.title}}</b>
+    {% if include.showdesc == true %}
+      <span>{{include.desc}}</span>
+    {% endif %}
+    {% if page.url contains include.match %}</mark>{% endif %}
+  </a>
+</li>

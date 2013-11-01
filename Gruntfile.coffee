@@ -78,7 +78,11 @@ module.exports = (grunt) ->
           }
           {
             cmd: 'jekyll'
-            args: ['serve', '--watch', '--baseurl', '']
+            args: [
+              'serve'
+              '--watch'
+              '--config', '_config-local.yml'
+            ]
           }
         ]
 
