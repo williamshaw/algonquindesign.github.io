@@ -242,7 +242,7 @@ abbr[title="and"]{border-bottom:0;font-family:Baskerville,Palatino,"Book Antiqua
 .nav-btn[data-state="active"] .nav__icon--open{opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}
 .nav-btn[data-state="active"] .nav__icon--close{opacity:1;-ms-filter:none;filter:none}
 .nav{clear:both;overflow:hidden;font-family:"Source Sans Pro",Arial,sans-serif}
-.nav > ul{margin:0;padding:8px 0;background-color:#000;list-style-type:none;font-size:1.125em;font-weight:bold}
+.nav > ul{margin:0;padding:8px 0;background-color:#000;list-style-type:none;font-size:1rem;font-weight:bold}
 .nav mark{background-color:transparent;color:inherit}
 .nav span{display:block;color:#bbb;font:normal .875em/1.5 Merriweather,serif}
 .nav a,.nav a:link,.nav a:visited{display:block;padding:.5em 46px .5em 10px;position:relative;border:0;color:#e2e2e2;text-decoration:none}
@@ -255,7 +255,9 @@ abbr[title="and"]{border-bottom:0;font-family:Baskerville,Palatino,"Book Antiqua
 @media only screen and (min-width: 32em){.nav--bottom .nav__current a:after{left:1%;right:auto;width:1em}
 }@media only screen and (min-width: 44em){.nav--bottom .nav__current a:after{left:-.8em}
 }.nav--top > ul{left:0;max-height:0;margin:0;overflow:hidden;padding:0;position:absolute;right:0;z-index:1000;-webkit-transition:max-height 200ms linear;-moz-transition:max-height 200ms linear;-o-transition:max-height 200ms linear;-ms-transition:max-height 200ms linear;transition:max-height 200ms linear;text-align:right;}
-@media only screen and (min-width: 19em){.nav--top > ul{left:auto;width:11.4em}
+@media only screen and (min-width: 19em){.nav--top > ul{left:auto;width:11.7em}
+}@media only screen and (min-width: 60em){.nav--top > ul{width:11.1em}
+}@media only screen and (min-width: 85em){.nav--top > ul{width:10.9em}
 }.nav--top li:first-child{margin-top:8px}
 .nav--top li:last-child{margin-bottom:8px}
 .nav--top[data-state="expanded"] > ul{max-height:24em}
